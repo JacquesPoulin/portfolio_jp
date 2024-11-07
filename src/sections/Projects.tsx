@@ -8,12 +8,12 @@ export const ProjectsSection = () => {
 	return (
 		<section className='pb-16 lg:p-y-24'>
 			<div className='container'>
-				<div className='flex justify-center mb-12'>
-					<p className='italic text-xl font-semibold tracking-widest bg-gradient-to-r from-yellow-300 to-emerald-400 text-transparent bg-clip-text'>
+				<div className='flex flex-col items-center lg:flex-row gap-2 md:gap-4 justify-center mb-12'>
+					<p className='italic md:text-xl font-semibold tracking-widest bg-gradient-to-r from-yellow-300 to-emerald-400 text-transparent bg-clip-text'>
 						"La simplicité est la condition sine qua non de la fiabilité"
 					</p>
-					<p className='italic text-xl font-semibold tracking-widest bg-gradient-to-r from-yellow-300 to-emerald-400 text-transparent bg-clip-text'>
-						- Edsger W. Dijkstra
+					<p className='italic md:text-xl font-semibold tracking-widest bg-gradient-to-r from-yellow-300 to-emerald-400 text-transparent bg-clip-text'>
+						- Edsger W. Dijkstra -
 					</p>
 				</div>
 

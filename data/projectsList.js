@@ -4,7 +4,7 @@ import aiStartupLandingPage from '@/assets/images/ai-startup-landing-page.png';
 
 export const portfolioProjects = [
 	{
-        id: 1,
+		id: 1,
 		company: 'Acme Corp',
 		year: '2022',
 		title: 'Dark Saas Landing Page',
@@ -17,7 +17,7 @@ export const portfolioProjects = [
 		image: darkSaasLandingPage,
 	},
 	{
-        id: 2,
+		id: 2,
 		company: 'Innovative Co',
 		year: '2021',
 		title: 'Light Saas Landing Page',
@@ -30,7 +30,7 @@ export const portfolioProjects = [
 		image: lightSaasLandingPage,
 	},
 	{
-        id: 3,
+		id: 3,
 		company: 'Quantum Dynamics',
 		year: '2023',
 		title: 'AI Startup Landing Page',
@@ -43,7 +43,7 @@ export const portfolioProjects = [
 		image: aiStartupLandingPage,
 	},
 	// {
-    //     id: 4,
+	//     id: 4,
 	// 	company: 'Quantum Dynamics',
 	// 	year: '2023',
 	// 	title: 'AI Startup Landing Page',
@@ -56,7 +56,7 @@ export const portfolioProjects = [
 	// 	image: aiStartupLandingPage,
 	// },
 	// {
-    //     id: 5,
+	//     id: 5,
 	// 	company: 'Quantum Dynamics',
 	// 	year: '2023',
 	// 	title: 'AI Startup Landing Page',
