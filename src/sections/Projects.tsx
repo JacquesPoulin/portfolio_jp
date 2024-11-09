@@ -1,45 +1,37 @@
+// ? NEXT
 import Image from 'next/image';
+
+// ? DATA
 import { portfolioProjects } from './../../data/projectsList';
+
+// ? ASSETS
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 import grainImage from '@/assets/images/grain.jpg';
 
+// ? COMPOSANTS
+import { SectionHeader } from '@/components/SectionHeader';
+import { Card } from '@/components/Card';
+
 export const ProjectsSection = () => {
 	return (
-		<section className='pb-16 lg:p-y-24'>
+		<section className='pb-16 lg:p-y-24 text-center'>
 			<div className='container'>
-				<div className='flex flex-col items-center lg:flex-row gap-2 md:gap-4 justify-center mb-12'>
-					<p className='italic md:text-xl font-semibold tracking-widest bg-gradient-to-r from-yellow-300 to-emerald-400 text-transparent bg-clip-text'>
-						"La simplicité est la condition sine qua non de la fiabilité"
-					</p>
-					<p className='italic md:text-xl font-semibold tracking-widest bg-gradient-to-r from-yellow-300 to-emerald-400 text-transparent bg-clip-text'>
-						- Edsger W. Dijkstra -
-					</p>
-				</div>
-
-				<h2 className='font-serif text-3xl md:text-5xl text-center mt-6 tracking-wide'>
-					MES PROJETS
-				</h2>
-
-				<p className='text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto'>
-					Un code propre, efficace & maintenable
-				</p>
+				<SectionHeader
+					citation='La simplicité est la condition sine qua non de la fiabilité'
+					auteurCitation='- Edsger W. Dijkstra -'
+					titre='MES PROJETS'
+					description='Un code propre, efficace & maintenable'
+				/>
 
 				{/* Container global CARTE */}
 				<div className='mt-10 md:mt-20 flex flex-col gap-20'>
 					{/* Liste de projets en carte */}
 					{portfolioProjects?.map(
 						({ id, company, year, title, results, link, image }) => (
-							<div
+							<Card
 								key={id}
-								className='bg-grey-800 rounded-3xl relative z-0 overflow-hidden after:z-10 after:content-[""] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20  after:pointer-events-none px-8 pt-8 md:pt-12 md:px10 lg:pt-16 lg:px-20'>
-								{/* Fond à grain (transparence) */}
-								<div
-									className='absolute inset-0 -z-10 opacity-5'
-									style={{
-										backgroundImage: `url(${grainImage.src})`,
-									}}></div>
-
+								className='px-8 pt-8 pb-0 md:pt-12 md:px10 lg:pt-16 lg:px-20'>
 								{/* GRID à partir de la taille lg */}
 								<div className='lg:grid lg:grid-cols-2 lg:gap-16'>
 									{/* GRID : colonne 1 */}
@@ -89,7 +81,7 @@ export const ProjectsSection = () => {
 										/>
 									</div>
 								</div>
-							</div>
+							</Card>
 						)
 					)}
 				</div>
