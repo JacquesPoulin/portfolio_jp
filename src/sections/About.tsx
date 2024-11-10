@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import grainImage from '@/assets/images/grain.jpg';
-import StarIcon from '@/assets/icons/star.svg';
 import bookImage from '@/assets/images/book-cover.png';
 import mapImage from '@/assets/images/map.png';
 import memojiImage from '@/assets/images/guy-using-laptop.png';
