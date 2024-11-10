@@ -1,5 +1,5 @@
 export const words = [
-	'Performant',
+	'Performance',
 	'Accessible',
 	'Sécurisé',
 	'Interactif',
