@@ -7,7 +7,6 @@ import { portfolioProjects } from './../../data/projectsList';
 // ? ASSETS
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
-import grainImage from '@/assets/images/grain.jpg';
 
 // ? COMPOSANTS
 import { SectionHeader } from '@/components/SectionHeader';
