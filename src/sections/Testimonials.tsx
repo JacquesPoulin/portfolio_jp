@@ -9,7 +9,7 @@ import { testimonials } from './../../data/testimonialsList';
 
 export const TestimonialsSection = () => {
 	return (
-		<section className='pb-16 lg:p-y-24'>
+		<section id='temoignages' className='pb-16 lg:p-y-24'>
 			{/* HEADER : citation, titre, description... */}
 			<div className='container'>
 				<SectionHeader

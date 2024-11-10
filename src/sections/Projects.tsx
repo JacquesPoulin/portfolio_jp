@@ -14,7 +14,7 @@ import { Card } from '@/components/Card';
 
 export const ProjectsSection = () => {
 	return (
-		<section className='pb-16 lg:p-y-24 text-center'>
+		<section id='projets' className='pb-16 lg:p-y-24 text-center'>
 			<div className='container'>
 				<SectionHeader
 					citation='La simplicité est la condition sine qua non de la fiabilité'

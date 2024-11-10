@@ -42,7 +42,7 @@ export const hobbies = [
 		top: '65%',
 	},
 	{
-		id: 6,
+		id: 7,
 		title: 'Photographie',
 		emoji: '',
 		left: '45%',

@@ -15,7 +15,7 @@ import { TechnosItems } from '@/components/TechnosItems';
 
 export const AboutSection = () => {
 	return (
-		<section className='py-20 lg:py-28'>
+		<section id='presentation' className='py-20 lg:py-28'>
 			<div className='container'>
 				{/* HEADER : citation, titre, description... */}
 				<SectionHeader

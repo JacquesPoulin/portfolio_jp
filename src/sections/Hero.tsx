@@ -1,3 +1,5 @@
+'use client';
+
 import memojiImage from '@/assets/images/guy-using-laptop.png';
 import ArrowDown from '@/assets/icons/arrow-down.svg';
 import Image from 'next/image';
@@ -6,12 +8,16 @@ import StarIcon from '@/assets/icons/star.svg';
 import SparkleIcon from '@/assets/icons/sparkle.svg';
 import HeroOrbit from '@/components/HeroOrbit';
 
+import { scrollToSection } from '../../utils/functions';
+
 // ! Composant de ma page Intro du site
 export const HeroSection = () => {
 	return (
-		<main className='py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip'>
+		<main
+			id='accueil'
+			className='py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip'>
 			{/* Div "masque" avec effet transparent en haut et en bas*/}
-			<div className='absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]'>
+			<div className='absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] z-0'>
 				<div
 					className='absolute inset-0 -z-30 opacity-5'
 					style={{ backgroundImage: `url(${grainImage.src})` }}></div>
@@ -59,7 +65,7 @@ export const HeroSection = () => {
 				</HeroOrbit>
 			</div>
 
-			<section className='container'>
+			<section className='container relative z-10'>
 				<div className='flex flex-col items-center'>
 					{/* Avatar */}
 					<Image
@@ -89,17 +95,27 @@ export const HeroSection = () => {
 					</div>
 				</div>
 
-				<div className='flex flex-col md:flex-row justify-center items-center mt-8 gap-4'>
-					<button className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl cursor-pointer'>
-						<span className='font-semibold hover:text-yellow-400 cursor-pointer'>
+				<div className='flex flex-col md:flex-row justify-center items-center mt-8 gap-4 relative z-20'>
+					<button
+						onClick={() => scrollToSection('projets')}
+						className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl hover:bg-white/5 transition-colors relative'>
+						<span className='font-semibold hover:text-yellow-400'>
 							Découvrir mes projets
 						</span>
 						<ArrowDown className='size-4' />
 					</button>
 
-					<button className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl cursor-pointer'>
+					{/* <a
+						href='/contact'
+						className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl hover:bg-white/90 transition-colors relative'>
 						<span className='animate-bounce'>👋</span>
-						<span className='font-semibold cursor-pointer'>Me contacter</span>
+						<span className='font-semibold'>Me contacter</span>
+					</a> */}
+					<button
+						onClick={() => scrollToSection('contact')}
+						className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl hover:bg-white/90 transition-colors relative'>
+						<span className='animate-bounce'>👋</span>
+						<span className='font-semibold'>Me contacter</span>
 					</button>
 				</div>
 			</section>
