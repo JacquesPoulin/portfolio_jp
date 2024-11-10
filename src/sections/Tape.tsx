@@ -10,8 +10,10 @@ export const TapeSection = () => {
 					<div className='flex [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]'>
 						<div className='flex flex-none gap-4 py-3'>
 							{words.map((word) => (
-								<div key={word} className='inline-flex gap-4 items-center'>
-									<span className='text-gray-900 uppercase font-extrabold text-sm'>
+								<div
+									key={word}
+									className='inline-flex gap-4 md:gap-7 items-center'>
+									<span className='text-gray-900 uppercase font-extrabold text-sm lg:text-lg'>
 										{word}
 									</span>
 									<StarIcon className='size-6 text-gray-900 -rotate-12' />
