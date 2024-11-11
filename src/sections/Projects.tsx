@@ -27,10 +27,16 @@ export const ProjectsSection = () => {
 				<div className='mt-10 md:mt-20 flex flex-col gap-20'>
 					{/* Liste de projets en carte */}
 					{portfolioProjects?.map(
-						({ id, company, year, title, results, link, image }) => (
+						({ id, company, year, title, results, link, image }, index) => (
 							<Card
 								key={id}
-								className='px-8 pt-8 pb-0 md:pt-12 md:px10 lg:pt-16 lg:px-20'>
+								className='px-8 pt-8 pb-0 md:pt-12 md:px10 lg:pt-16 lg:px-20 sticky'
+								style={{
+									position: 'sticky',
+									top: `${64 + index * 40}px`,
+									backgroundColor: 'rgb(3 7 18)',
+									zIndex: index,
+								}}>
 								{/* GRID à partir de la taille lg */}
 								<div className='lg:grid lg:grid-cols-2 lg:gap-16'>
 									{/* GRID : colonne 1 */}
