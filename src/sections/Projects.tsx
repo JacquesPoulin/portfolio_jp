@@ -40,7 +40,7 @@ export const ProjectsSection = () => {
 								{/* GRID à partir de la taille lg */}
 								<div className='lg:grid lg:grid-cols-2 lg:gap-16'>
 									{/* GRID : colonne 1 */}
-									<div className='lg:pb-16'>
+									<div className='lg:pb-16 z-10'>
 										{/* Entreprise & année de création du projet */}
 										<div>
 											<div className='bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text'>
@@ -59,7 +59,7 @@ export const ProjectsSection = () => {
 										<hr className='border-t-2 border-white/5 mt-4 md:mt-5' />
 
 										{/* Liste des compétences acquises */}
-										<ul className='flex flex-col gap-4 mt-4 md:mt-5'>
+										<ul key={id} className='flex flex-col gap-4 mt-4 md:mt-5'>
 											{results?.map(({ title }) => (
 												<li className='flex gap-2 text-sm text-white/50 md:text-base'>
 													<CheckCircleIcon className='size-5 md:size-6' />
@@ -69,8 +69,12 @@ export const ProjectsSection = () => {
 										</ul>
 
 										{/* Bouton : CTA */}
-										<a href={link} target='_blank' rel='noreferrer'>
-											<button className='bg-white text-gray-950 h-12 w-full rounded-xl px-6 font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto'>
+										<a
+											href={link}
+											target='_blank'
+											rel='noreferrer'
+											className='z-10'>
+											<button className='bg-white text-gray-950 h-12 w-full rounded-xl px-6 font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto z-10'>
 												<span>Voir le projet</span>
 												<ArrowUpRightIcon className='size-4' />
 											</button>
