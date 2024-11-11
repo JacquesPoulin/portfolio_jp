@@ -19,7 +19,7 @@ export const ContactModal: FC<ContactModalProps> = ({ isOpen, onClose }) => {
 					✕
 				</button>
 
-				<h3 className='font-serif text-2xl mb-6'>Contactez-moi</h3>
+				<h3 className='font-serif text-2xl mb-6'>Vous avez le choix 😄</h3>
 
 				{/* Email */}
 				<div className='mb-6'>
@@ -31,7 +31,7 @@ export const ContactModal: FC<ContactModalProps> = ({ isOpen, onClose }) => {
 						<div>
 							<p className='font-medium'>jacques.poulin64@gmail.com</p>
 							<p className='text-sm text-gray-500'>
-								Cliquez pour envoyer un email
+								Envoyer un email
 							</p>
 						</div>
 						<ArrowUpRightIcon className='size-4 ml-auto' />
@@ -48,8 +48,8 @@ export const ContactModal: FC<ContactModalProps> = ({ isOpen, onClose }) => {
 							className='flex items-center gap-2 p-4 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors'>
 							<span className='text-xl'>📞</span>
 							<div>
-								<p className='font-medium'>+33 6 00 00 00 00</p>
-								<p className='text-sm text-gray-500'>Cliquez pour appeler</p>
+								<p className='font-medium'>+33 6 79 17 71 58</p>
+								<p className='text-sm text-gray-500'>Pour appeler</p>
 							</div>
 							<ArrowUpRightIcon className='size-4 ml-auto' />
 						</a>
@@ -60,26 +60,22 @@ export const ContactModal: FC<ContactModalProps> = ({ isOpen, onClose }) => {
 							className='flex items-center gap-2 p-4 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors'>
 							<span className='text-xl'>💬</span>
 							<div>
-								<p className='font-medium'>+33 6 00 00 00 00</p>
-								<p className='text-sm text-gray-500'>
-									Cliquez pour envoyer un SMS
-								</p>
+								<p className='font-medium'>+33 6 79 17 71 58</p>
+								<p className='text-sm text-gray-500'>Pour envoyer un SMS</p>
 							</div>
 							<ArrowUpRightIcon className='size-4 ml-auto' />
 						</a>
 
 						{/* WhatsApp */}
 						<a
-							href='https://wa.me/33600000000'
+							href='https://wa.me/33679177158'
 							target='_blank'
 							rel='noreferrer'
 							className='flex items-center gap-2 p-4 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors'>
 							<span className='text-xl'>📱</span>
 							<div>
 								<p className='font-medium'>WhatsApp</p>
-								<p className='text-sm text-gray-500'>
-									Cliquez pour discuter sur WhatsApp
-								</p>
+								<p className='text-sm text-gray-500'>Discuter sur WhatsApp</p>
 							</div>
 							<ArrowUpRightIcon className='size-4 ml-auto' />
 						</a>
