@@ -1,3 +1,6 @@
+'use client';
+
+import { useRef } from 'react';
 import Image from 'next/image';
 import bookImage from '@/assets/images/book-cover.png';
 import mapImage from '@/assets/images/map.png';
@@ -13,7 +16,12 @@ import { Card } from '@/components/Card';
 import { CardHeader } from '@/components/CardHeader';
 import { TechnosItems } from '@/components/TechnosItems';
 
+// ? Library
+import { motion } from 'framer-motion';
+
 export const AboutSection = () => {
+	const constrainRef = useRef(null);
+
 	return (
 		<section id='presentation' className='py-20 lg:py-28'>
 			<div className='container'>
@@ -80,15 +88,18 @@ export const AboutSection = () => {
 							</div>
 
 							{/* Icones & titre des hobbies */}
-							<div className='relative flex-1'>
+							<div className='relative flex-1' ref={constrainRef}>
 								{hobbies?.map(({ id, title, emoji, left, top }) => (
-									<div
+									<motion.div
 										key={id}
 										className='inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute'
-										style={{ left: left, top: top }}>
+										style={{ left: left, top: top }}
+										drag
+										dragConstraints={constrainRef}
+									>
 										<span className='font-medium text-gray-950'>{title}</span>
 										<span>{emoji}</span>
-									</div>
+									</motion.div>
 								))}
 							</div>
 						</Card>
@@ -102,7 +113,6 @@ export const AboutSection = () => {
 							/>
 
 							<div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full after:content-[""] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30'>
-								
 								<div className='absolute inset-0 rounded-full bg-gradient-to-r from-blue-800 to-emerald-600 -z-20 animate-ping [animation-duration:2s]'></div>
 								<div className='absolute inset-0 rounded-full bg-gradient-to-r from-blue-800 to-emerald-600 -z-10'></div>
 

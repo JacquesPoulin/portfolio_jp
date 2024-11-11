@@ -27,7 +27,7 @@ export const TechnosItems = ({
 					itemsWrapperClassName
 				)}>
 				{[...new Array(2)].fill(0).map((_, idx) => (
-					<Fragment>
+					<Fragment key={idx}>
 						{technos?.map(({ title, iconType }) => (
 							<div
 								key={title}
