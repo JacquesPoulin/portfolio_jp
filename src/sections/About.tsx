@@ -92,11 +92,10 @@ export const AboutSection = () => {
 								{hobbies?.map(({ id, title, emoji, left, top }) => (
 									<motion.div
 										key={id}
-										className='inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute'
+										className='inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute cursor-move'
 										style={{ left: left, top: top }}
 										drag
-										dragConstraints={constrainRef}
-									>
+										dragConstraints={constrainRef}>
 										<span className='font-medium text-gray-950'>{title}</span>
 										<span>{emoji}</span>
 									</motion.div>

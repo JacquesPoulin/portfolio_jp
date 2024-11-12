@@ -10,7 +10,7 @@ import HeroOrbit from '@/components/HeroOrbit';
 
 import { scrollToSection } from '../../utils/functions';
 
-// ! Composant de ma page Intro du site
+// ! Composant de ma page d'Intro du site
 export const HeroSection = () => {
 	return (
 		<main
@@ -137,21 +137,13 @@ export const HeroSection = () => {
 					<button
 						onClick={() => scrollToSection('projets')}
 						className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl hover:bg-white/5 transition-colors relative'>
-						<span className='font-semibold hover:text-yellow-400'>
-							Découvrir mes projets
-						</span>
+						<span className='font-semibold'>Découvrir mes projets</span>
 						<ArrowDown className='size-4' />
 					</button>
 
-					{/* <a
-						href='/contact'
-						className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl hover:bg-white/90 transition-colors relative'>
-						<span className='animate-bounce'>👋</span>
-						<span className='font-semibold'>Me contacter</span>
-					</a> */}
 					<button
 						onClick={() => scrollToSection('contact')}
-						className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl hover:bg-white/90 transition-colors relative'>
+						className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl hover:bg-white/80 transition-colors relative'>
 						<span className='animate-bounce'>👋</span>
 						<span className='font-semibold'>Me contacter</span>
 					</button>

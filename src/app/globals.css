@@ -10,10 +10,72 @@
 	.hero-ring {
 		@apply absolute inset-0 border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5;
 	}
+
+	/* Styles pour le tooltip */
+	[data-tooltip] {
+		position: relative;
+	}
+
+	[data-tooltip]:before {
+		content: attr(data-tooltip);
+		position: absolute;
+		top: calc(100% + 5px);
+		left: 30%;
+		transform: translateX(-60%);
+		padding: 5px 10px;
+		border-radius: 6px;
+		background: rgb(3 7 18 / 0.9);
+		color: white;
+		font-size: 12px;
+		white-space: nowrap;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.2s ease;
+		@apply border border-white/10 backdrop-blur-sm;
+		z-index: 9999;
+	}
+
+	[data-tooltip]:after {
+		content: '';
+		position: absolute;
+		top: calc(100% - 3px);
+		left: 30%;
+		transform: translateX(-60%);
+		border-width: 5px;
+		border-style: solid;
+		border-color: transparent transparent rgb(3 7 18 / 0.9) transparent;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.2s ease;
+		z-index: 9999;
+	}
+
+	[data-tooltip]:hover:before,
+	[data-tooltip]:hover:after {
+		opacity: 1;
+		visibility: visible;
+	}
 }
 
 @layer utilities {
 	.container {
 		@apply lg:max-w-5xl;
+	}
+	.custom-scrollbar {
+		scrollbar-width: thin;
+		scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+	}
+
+	.custom-scrollbar::-webkit-scrollbar {
+		width: 6px;
+	}
+
+	.custom-scrollbar::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	.custom-scrollbar::-webkit-scrollbar-thumb {
+		background-color: rgba(255, 255, 255, 0.1);
+		border-radius: 20px;
 	}
 }
