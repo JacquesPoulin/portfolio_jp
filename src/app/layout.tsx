@@ -29,19 +29,19 @@ const calistoga = Calistoga({
 	weight: ['400'],
 });
 
-interface MetadataParams {
-	title: string;
-	description: string;
-	tags: string[];
-	slug: string;
-}
+// interface MetadataParams {
+// 	title: string;
+// 	description: string;
+// 	tags: string[];
+// 	slug: string;
+// }
 
 type RootLayoutProps = {
 	children: React.ReactNode;
 };
 
 // Définition du type pour OpenGraph
-type OpenGraphMetadata = NonNullable<Metadata['openGraph']>;
+// type OpenGraphMetadata = NonNullable<Metadata['openGraph']>;
 
 // Métadonnées par défaut
 const defaultMetadata: Metadata = {
