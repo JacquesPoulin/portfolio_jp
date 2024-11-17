@@ -77,7 +77,7 @@ export const portfolioProjects = [
 		year: '2023',
 		title: "Site: partage de prompts d'IA",
 		results: [{ title: 'NextJS' }, { title: 'MongoDB' }, { title: 'Tailwind' }],
-		webSite: 'https://promptopia-mope9cd14-jacquespoulin.vercel.app/',
+		webSite: 'https://promptopia-zeta-sage.vercel.app/',
 		image: promptopiaImage,
 		projetPerso: true,
 		description: `
@@ -200,7 +200,7 @@ export const portfolioProjects = [
 			</div>
 
 			<div class="mb-6">
-			<h4 class="text-emerald-300 font-semibold mb-3">Aspects techniques :</h4>
+			<h4 class="text-emerald-300 font-semibold mb-6">Aspects techniques :</h4>
 			<ul class="space-y-2 text-white/70">
 				<li class="flex items-start gap-2">
 				<span class="text-emerald-300/80">•</span>
@@ -222,7 +222,7 @@ export const portfolioProjects = [
 			</div>
 
 			<div class="mb-6">
-			<h4 class="text-emerald-300 font-semibold mb-3">Défis créatifs relevés :</h4>
+			<h4 class="text-emerald-300 font-semibold mb-6">Défis créatifs relevés :</h4>
 			<ul class="space-y-2 text-white/70">
 				<li class="flex items-start gap-2">
 				<span class="text-emerald-300/80">•</span>
@@ -266,7 +266,7 @@ export const portfolioProjects = [
 			</p>
 
 			<div class="mb-6">
-			<h4 class="text-emerald-300 font-semibold mb-3">Caractéristiques principales :</h4>
+			<h4 class="text-emerald-300 font-semibold mb-6">Caractéristiques principales :</h4>
 			<ul class="space-y-2 text-white/70">
 				<li class="flex items-start gap-2">
 				<span class="text-emerald-300/80">•</span>
@@ -292,7 +292,7 @@ export const portfolioProjects = [
 			</div>
 
 			<div class="mb-6">
-			<h4 class="text-emerald-300 font-semibold mb-3">Aspects techniques :</h4>
+			<h4 class="text-emerald-300 font-semibold mb-6">Aspects techniques :</h4>
 			<ul class="space-y-2 text-white/70">
 				<li class="flex items-start gap-2">
 				<span class="text-emerald-300/80">•</span>
@@ -314,7 +314,7 @@ export const portfolioProjects = [
 			</div>
 
 			<div class="mb-6">
-			<h4 class="text-emerald-300 font-semibold mb-3">Points forts Mobile First :</h4>
+			<h4 class="text-emerald-300 font-semibold mb-6">Points forts Mobile First :</h4>
 			<ul class="space-y-2 text-white/70">
 				<li class="flex items-start gap-2">
 				<span class="text-emerald-300/80">•</span>
@@ -336,7 +336,7 @@ export const portfolioProjects = [
 			</div>
 
 			<div class="mb-6">
-			<h4 class="text-emerald-300 font-semibold mb-3">Optimisations techniques :</h4>
+			<h4 class="text-emerald-300 font-semibold mb-6">Optimisations techniques :</h4>
 			<ul class="space-y-2 text-white/70">
 				<li class="flex items-start gap-2">
 				<span class="text-emerald-300/80">•</span>
@@ -376,7 +376,7 @@ export const portfolioProjects = [
 			</p>
 
 			<div class="mb-6">
-			<h4 class="text-emerald-300 font-semibold mb-3">Fonctionnalités principales :</h4>
+			<h4 class="text-emerald-300 font-semibold mb-6">Fonctionnalités principales :</h4>
 			<ul class="space-y-2 text-white/70">
 				<li class="flex items-start gap-2">
 				<span class="text-emerald-300/80">•</span>
@@ -402,7 +402,7 @@ export const portfolioProjects = [
 			</div>
 
 			<div class="mb-6">
-			<h4 class="text-emerald-300 font-semibold mb-3">Intégration technique :</h4>
+			<h4 class="text-emerald-300 font-semibold mb-6">Intégration technique :</h4>
 			<ul class="space-y-2 text-white/70">
 				<li class="flex items-start gap-2">
 				<span class="text-emerald-300/80">•</span>
@@ -424,7 +424,7 @@ export const portfolioProjects = [
 			</div>
 
 			<div class="mb-6">
-			<h4 class="text-emerald-300 font-semibold mb-3">Optimisations UX/UI :</h4>
+			<h4 class="text-emerald-300 font-semibold mb-6">Optimisations UX/UI :</h4>
 			<ul class="space-y-2 text-white/70">
 				<li class="flex items-start gap-2">
 				<span class="text-emerald-300/80">•</span>
@@ -446,7 +446,7 @@ export const portfolioProjects = [
 			</div>
 
 			<div class="mb-6">
-			<h4 class="text-emerald-300 font-semibold mb-3">Défis techniques relevés :</h4>
+			<h4 class="text-emerald-300 font-semibold mb-6">Défis techniques relevés :</h4>
 			<ul class="space-y-2 text-white/70">
 				<li class="flex items-start gap-2">
 				<span class="text-emerald-300/80">•</span>
