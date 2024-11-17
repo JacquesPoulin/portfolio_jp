@@ -20,7 +20,7 @@ export const portfolioProjects = [
 			</p>
 
 			<div class="mb-6">
-			<h4 class="text-emerald-300 font-semibold mb-3">Points clés du développement :</h4>
+			<h4 class="text-emerald-300 font-semibold mb-6">Points clés du développement :</h4>
 			<ul class="space-y-2 text-white/70">
 				<li class="flex items-start gap-2">
 				<span class="text-emerald-300/80">•</span>
@@ -46,7 +46,7 @@ export const portfolioProjects = [
 			</div>
 
 			<div class="mb-6">
-			<h4 class="text-emerald-300 font-semibold mb-3">Défis techniques relevés :</h4>
+			<h4 class="text-emerald-300 font-semibold mb-6">Défis techniques relevés :</h4>
 			<ul class="space-y-2 text-white/70">
 				<li class="flex items-start gap-2">
 				<span class="text-emerald-300/80">•</span>
@@ -86,7 +86,7 @@ export const portfolioProjects = [
 			</p>
 
 			<div class="mb-6">
-			<h4 class="text-emerald-300 font-semibold mb-3">Fonctionnalités clés développées :</h4>
+			<h4 class="text-emerald-300 font-semibold mb-6">Fonctionnalités clés développées :</h4>
 			<ul class="space-y-2 text-white/70">
 				<li class="flex items-start gap-2">
 				<span class="text-emerald-300/80">•</span>
@@ -112,7 +112,7 @@ export const portfolioProjects = [
 			</div>
 
 			<div class="mb-6">
-			<h4 class="text-emerald-300 font-semibold mb-3">Stack technique :</h4>
+			<h4 class="text-emerald-300 font-semibold mb-6">Stack technique :</h4>
 			<ul class="space-y-2 text-white/70">
 				<li class="flex items-start gap-2">
 				<span class="text-emerald-300/80">•</span>
@@ -134,7 +134,7 @@ export const portfolioProjects = [
 			</div>
 
 			<div class="mb-6">
-			<h4 class="text-emerald-300 font-semibold mb-3">Défis techniques relevés :</h4>
+			<h4 class="text-emerald-300 font-semibold mb-6">Défis techniques relevés :</h4>
 			<ul class="space-y-2 text-white/70">
 				<li class="flex items-start gap-2">
 				<span class="text-emerald-300/80">•</span>
@@ -174,7 +174,7 @@ export const portfolioProjects = [
 			</p>
 
 			<div class="mb-6">
-			<h4 class="text-emerald-300 font-semibold mb-3">Fonctionnalités innovantes :</h4>
+			<h4 class="text-emerald-300 font-semibold mb-6">Fonctionnalités innovantes :</h4>
 			<ul class="space-y-2 text-white/70">
 				<li class="flex items-start gap-2">
 				<span class="text-emerald-300/80">•</span>

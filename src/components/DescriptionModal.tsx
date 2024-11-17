@@ -1,4 +1,4 @@
-// components/DescriptionModal.tsx
+// ! Composant modale décrivant le projet
 import { motion } from 'framer-motion';
 
 interface DescriptionModalProps {
@@ -36,13 +36,15 @@ export const DescriptionModal = ({
 						className='absolute top-4 right-4 text-white/60 hover:text-white'>
 						✕
 					</button>
-					<h3 className='font-serif text-2xl'>{company}</h3>
+					<h3 className='font-serif text-xl lg:text-2xl tracking-wide lg:tracking-widest text-indigo-200'>
+						{company}
+					</h3>
 				</div>
 
 				{/* Contenu scrollable */}
 				<div className='p-6 overflow-y-auto custom-scrollbar'>
 					<div
-						className='prose prose-invert max-w-none'
+						className='prose prose-invert max-w-none tracking-wide'
 						dangerouslySetInnerHTML={{ __html: description }}
 					/>
 				</div>

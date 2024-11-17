@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 
 // ? NEXT
@@ -70,7 +70,7 @@ export const ProjectsSection = () => {
 						) => (
 							<Card
 								key={id}
-								className='px-8 pt-8 pb-0 md:pt-12 md:px10 lg:pt-16 lg:px-20 relative overflow-hidden' // Ajout de relative
+								className='px-8 pt-8 pb-0 md:pt-12 md:px10 lg:pt-16 lg:px-20 relative overflow-hidden'
 								style={{
 									position: 'sticky',
 									top: `${64 + index * 40}px`,
@@ -167,6 +167,7 @@ export const ProjectsSection = () => {
 						)
 					)}
 				</div>
+
 				{/* Modal */}
 				<AnimatePresence>
 					{selectedProject !== null && (

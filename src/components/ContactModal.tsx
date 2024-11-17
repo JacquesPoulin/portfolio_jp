@@ -49,7 +49,7 @@ export const ContactModal: FC<ContactModalProps> = ({ isOpen, onClose }) => {
 							<span className='text-xl'>📞</span>
 							<div>
 								<p className='font-medium'>+33 6 79 17 71 58</p>
-								<p className='text-sm text-gray-500'>Pour appeler</p>
+								<p className='text-sm text-gray-500'>Appeler</p>
 							</div>
 							<ArrowUpRightIcon className='size-4 ml-auto' />
 						</a>
@@ -61,7 +61,7 @@ export const ContactModal: FC<ContactModalProps> = ({ isOpen, onClose }) => {
 							<span className='text-xl'>💬</span>
 							<div>
 								<p className='font-medium'>+33 6 79 17 71 58</p>
-								<p className='text-sm text-gray-500'>Pour envoyer un SMS</p>
+								<p className='text-sm text-gray-500'>Envoyer un SMS</p>
 							</div>
 							<ArrowUpRightIcon className='size-4 ml-auto' />
 						</a>

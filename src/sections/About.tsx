@@ -49,7 +49,7 @@ export const AboutSection = () => {
 								{/* Image de livre */}
 								<Image
 									src={bookImage}
-									className=''
+									className='rounded-md'
 									alt="Image de la couverture d'un livre"
 								/>
 							</div>
@@ -104,11 +104,15 @@ export const AboutSection = () => {
 						</Card>
 
 						{/* CARD 4 : Plan & adresse */}
-						<Card className='h-[320px] p-0 md:col-span-2 lg:col-span-1'>
+						<Card
+							className='h-[320px] p-0 md:col-span-2 lg:col-span-1'
+							title='PAYS BASQUE FRANÇAIS'>
 							<Image
 								src={mapImage}
-								alt='Carte du pays basque'
+								alt='Carte du pays basque français'
 								className='w-full h-full object-cover object-left-top'
+								data-tooltip='PAYS BASQUE FRANÇAIS'
+								aria-label="Carte du pays basque français"
 							/>
 
 							<div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full after:content-[""] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30'>

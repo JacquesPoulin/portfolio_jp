@@ -1,6 +1,7 @@
 'use client';
 
-import memojiImage from '@/assets/images/guy-using-laptop.png';
+// import memojiImage from '@/assets/images/guy-using-laptop.png';
+import memojiImage from '@/assets/images/developer-man-working-on-macbook.png';
 import ArrowDown from '@/assets/icons/arrow-down.svg';
 import Image from 'next/image';
 import grainImage from '@/assets/images/grain.jpg';
@@ -21,6 +22,7 @@ export const HeroSection = () => {
 				<div
 					className='absolute inset-0 -z-30 opacity-5'
 					style={{ backgroundImage: `url(${grainImage.src})` }}></div>
+
 				{/* Cercles */}
 				<div className='size-[620px] md:size-[720px] hero-ring'></div>
 				<div className='size-[820px] md:size-[920px] hero-ring'></div>
@@ -104,13 +106,15 @@ export const HeroSection = () => {
 			<section className='container relative z-10'>
 				<div className='flex flex-col items-center'>
 					{/* Avatar */}
-					<Image
-						src={memojiImage}
-						className='size-[150px] md:size-[200px]'
-						alt='avatar personne derrière un ordinateur portable'
-					/>
+					<a href='' data-tooltip="Découvrez mon gitHub">
+						<Image
+							src={memojiImage}
+							className='size-[150px] md:size-[200px]'
+							alt='avatar personne derrière un ordinateur portable'
+						/>
+					</a>
 
-					<div className='bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg'>
+					<div className='bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg -mt-4'>
 						<div className='bg-green-500 size-2.5 rounded-full relative'>
 							<div className='bg-green-500 absolute inset-0 rounded-full animate-ping-large'></div>
 						</div>
