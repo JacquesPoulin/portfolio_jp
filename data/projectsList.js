@@ -1,3 +1,4 @@
+import familyBudgetImage from '@/assets/images/familyBudget.png';
 import aerialImage from '@/assets/images/aerial.png';
 import promptopiaImage from '@/assets/images/promptopia.png';
 import starTourImage from '@/assets/images/starTour_1.png';
@@ -7,7 +8,73 @@ import movieFinderImage from '@/assets/images/movie.png';
 export const portfolioProjects = [
 	{
 		id: 1,
-		company: 'aerial pays basque',
+		company: 'family budget',
+		year: '2024',
+		title: 'APP: gestion de budget',
+		results: [{ title: 'React' }, { title: 'Tailwind' }, { title: 'Firebase' }],
+		webSite: 'https://www.familiybudget.com/',
+		image: familyBudgetImage,
+		projetPerso: false,
+		description: `
+			<p class="text-base text-white/80 mb-6">
+			Développement d'une application web complète de gestion de budget familial, permettant aux utilisateurs de suivre leurs dépenses, revenus et épargnes en temps réel. Cette solution moderne et intuitive facilite la planification financière au quotidien.
+			</p>
+
+			<div class="mb-6">
+			<h4 class="text-emerald-300 font-semibold mb-6">Points clés du développement :</h4>
+			<ul class="space-y-2 text-white/70">
+				<li class="flex items-start gap-2">
+				<span class="text-emerald-300/80">•</span>
+				Interface utilisateur intuitive développée avec React
+				</li>
+				<li class="flex items-start gap-2">
+				<span class="text-emerald-300/80">•</span>
+				Design moderne et responsive avec Tailwind CSS
+				</li>
+				<li class="flex items-start gap-2">
+				<span class="text-emerald-300/80">•</span>
+				Base de données temps réel avec Firebase
+				</li>
+				<li class="flex items-start gap-2">
+				<span class="text-emerald-300/80">•</span>
+				Système d'authentification sécurisé
+				</li>
+				<li class="flex items-start gap-2">
+				<span class="text-emerald-300/80">•</span>
+				Visualisation des données avec des graphiques interactifs
+				</li>
+			</ul>
+			</div>
+
+			<div class="mb-6">
+			<h4 class="text-emerald-300 font-semibold mb-6">Défis techniques relevés :</h4>
+			<ul class="space-y-2 text-white/70">
+				<li class="flex items-start gap-2">
+				<span class="text-emerald-300/80">•</span>
+				Mise en place d'un système de catégorisation automatique des dépenses
+				</li>
+				<li class="flex items-start gap-2">
+				<span class="text-emerald-300/80">•</span>
+				Développement de fonctionnalités de calcul en temps réel
+				</li>
+				<li class="flex items-start gap-2">
+				<span class="text-emerald-300/80">•</span>
+				Implémentation d'un système d'export de données
+				</li>
+				<li class="flex items-start gap-2">
+				<span class="text-emerald-300/80">•</span>
+				Gestion optimisée des états.
+				</li>
+			</ul>
+			</div>
+
+			<p class="text-base text-white/80">
+			Cette application permet aux familles de mieux gérer leur budget grâce à des fonctionnalités intuitives et une visualisation claire de leurs finances, contribuant ainsi à une meilleure santé financière au quotidien.
+			</p>`,
+	},
+	{
+		id: 2,
+		company: 'aerialpaysbasque',
 		year: '2023',
 		title: 'Site: cours de cerceau aérien',
 		results: [{ title: 'React' }, { title: 'Tailwind' }],
@@ -60,10 +127,6 @@ export const portfolioProjects = [
 				<span class="text-emerald-300/80">•</span>
 				Mise en place d'un système de routing efficace pour une navigation fluide
 				</li>
-				<li class="flex items-start gap-2">
-				<span class="text-emerald-300/80">•</span>
-				Intégration d'un formulaire de contact sécurisé
-				</li>
 			</ul>
 			</div>
 
@@ -72,7 +135,7 @@ export const portfolioProjects = [
 			</p>`,
 	},
 	{
-		id: 2,
+		id: 3,
 		company: 'promptopia',
 		year: '2023',
 		title: "Site: partage de prompts d'IA",
@@ -160,7 +223,7 @@ export const portfolioProjects = [
 			</p>`,
 	},
 	{
-		id: 3,
+		id: 4,
 		company: 'star tour agency',
 		year: '2022',
 		title: 'Site : agence de voyage spatial',
@@ -248,7 +311,7 @@ export const portfolioProjects = [
 			</p>`,
 	},
 	{
-		id: 4,
+		id: 5,
 		company: 'landarea',
 		year: '2022',
 		title: 'App : vente de plantes',
@@ -362,7 +425,7 @@ export const portfolioProjects = [
 			</p>`,
 	},
 	{
-		id: 5,
+		id: 6,
 		company: 'find the movie',
 		year: '2021',
 		title: 'Site : bibliothèque de films',
