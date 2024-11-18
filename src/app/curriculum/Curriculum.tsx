@@ -24,10 +24,10 @@ export const Curriculum = () => {
 
 	// ? Fonction pour gérer le téléchargement du CV
 	const handleDownloadCV = () => {
-		// Le chemin vers votre fichier PDF dans le dossier public
+		// Chemin vers le fichier PDF
 		const cvPath = '/CV_JACQUES_POULIN_2025.pdf';
 
-		// Créer un lien temporaire pour le téléchargement
+		// Création d'un lien temporaire pour le téléchargement
 		const link = document.createElement('a');
 		link.href = cvPath;
 		link.download = 'CV_JACQUES_POULIN_2025.pdf'; // Nom du fichier lors du téléchargement
