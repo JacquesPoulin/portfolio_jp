@@ -180,22 +180,105 @@ export const Curriculum = () => {
 					<div className='space-y-8'>
 						<div className='p-6 rounded-xl bg-white/5'>
 							<div className='flex flex-col md:flex-row md:justify-between md:items-center mb-4'>
-								<h3 className='font-semibold'>
-									Développeur Full Stack - CODEACTIVE
-								</h3>
-								<span className='text-white/40'>2022 - Présent</span>
+								<div>
+									<h3 className='font-semibold text-xl'>
+										Développeur Full Stack - CODEACTIVE
+									</h3>
+									<p className='text-white/60'>2022 - Présent</p>
+								</div>
 							</div>
-							<ul className='space-y-2 text-white/70 list-disc pl-4'>
-								<li>DATABASE : Gestion & optimisation de bases de données</li>
-								<li>
-									ERP : Maintenance et ajout de nouvelles fonctionnalités
-									logiciels
-								</li>
-								<li>
-									WEB : Création du nouveau site internet de l'entreprise (en
-									cours)
-								</li>
-							</ul>
+
+							{/* Responsabilités principales */}
+							<div className='space-y-6 mt-6'>
+								{/* Logiciel d'Entreprise */}
+								<div className='space-y-2'>
+									<h4 className='flex items-center gap-2 text-emerald-300 font-semibold'>
+										<span>🚀</span> Architecture & Développement Logiciel
+									</h4>
+									<ul className='space-y-2 text-white/70 list-disc pl-4'>
+										<li>
+											Développement et optimisation d'une application
+											d'entreprise avec Python/Django et React
+										</li>
+										<li>
+											Amélioration continue des performances et de l'expérience
+											utilisateur
+										</li>
+									</ul>
+								</div>
+
+								{/* Base de données */}
+								<div className='space-y-2'>
+									<h4 className='flex items-center gap-2 text-emerald-300 font-semibold'>
+										<span>🗃️</span> Gestion & Optimisation de Bases de Données
+									</h4>
+									<ul className='space-y-2 text-white/70 list-disc pl-4'>
+										<li>Administration et sécurisation de bases PostgreSQL</li>
+										<li>
+											Optimisation des requêtes via l'ORM Django pour des
+											performances accrues
+										</li>
+										<li>Mise en place de stratégies de caching avec Redis</li>
+									</ul>
+								</div>
+
+								{/* Développement Web */}
+								<div className='space-y-2'>
+									<h4 className='flex items-center gap-2 text-emerald-300 font-semibold'>
+										<span>🌐</span> Développement Web Full-Stack
+									</h4>
+									<ul className='space-y-2 text-white/70 list-disc pl-4'>
+										<li>
+											Architecture et développement du nouveau site web de
+											l'entreprise (en cours)
+										</li>
+										<li>
+											Implémentation de fonctionnalités full-stack
+										</li>
+										<li>Intégration d'APIs RESTful sécurisées</li>
+									</ul>
+								</div>
+
+								{/* Compétences techniques */}
+								<div className='space-y-2'>
+									<h4 className='flex items-center gap-2 text-emerald-300 font-semibold'>
+										<span>💻</span> Stack Technique & Compétences
+									</h4>
+									<div className='flex flex-wrap gap-2 mt-2'>
+										{[
+											'React.js',
+											'Python',
+											'Django',
+											'PostgreSQL',
+											'Redis',
+											'SASS',
+										].map((skill) => (
+											<span
+												key={skill}
+												className='px-3 py-1 rounded-full bg-white/5 text-sm text-white/70'>
+												{skill}
+											</span>
+										))}
+									</div>
+								</div>
+
+								{/* Soft Skills */}
+								<div className='space-y-2'>
+									<h4 className='flex items-center gap-2 text-emerald-300 font-semibold'>
+										<span>🤝</span> Soft Skills
+									</h4>
+									<ul className='space-y-2 text-white/70 list-disc pl-4'>
+										<li>
+											Collaboration active au sein d'une équipe
+											pluridisciplinaire
+										</li>
+										<li>
+											Adaptabilité rapide aux nouvelles technologies et défis de l'entreprise
+										</li>
+										<li>Communication efficace avec les parties prenantes</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>

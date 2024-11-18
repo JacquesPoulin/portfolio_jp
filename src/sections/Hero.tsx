@@ -106,7 +106,11 @@ export const HeroSection = () => {
 			<section className='container relative z-10'>
 				<div className='flex flex-col items-center'>
 					{/* Avatar */}
-					<a href='' data-tooltip="Découvrez mon gitHub">
+					<a
+						href='https://github.com/JacquesPoulin'
+						target='_blank'
+						rel='noreferrer'
+						data-tooltip='Découvrez mon gitHub'>
 						<Image
 							src={memojiImage}
 							className='size-[150px] md:size-[200px]'
