@@ -21,15 +21,37 @@ export const Curriculum = () => {
 			setIsContactModalOpen(true);
 		}
 	};
+
+	// ? Fonction pour gérer le téléchargement du CV
+	const handleDownloadCV = () => {
+		// Le chemin vers votre fichier PDF dans le dossier public
+		const cvPath = '/CV_JACQUES_POULIN_2025.pdf';
+
+		// Créer un lien temporaire pour le téléchargement
+		const link = document.createElement('a');
+		link.href = cvPath;
+		link.download = 'CV_JACQUES_POULIN_2025.pdf'; // Nom du fichier lors du téléchargement
+		document.body.appendChild(link);
+		link.click();
+		document.body.removeChild(link);
+	};
+
 	return (
 		<div className='min-h-screen bg-gray-950'>
-			{/* Navigation */}
-			<nav className='container mx-auto px-4 py-8'>
+			{/* Navigation avec bouton de téléchargement */}
+			<nav className='container mx-auto px-4 py-8 flex justify-between items-center'>
 				<Link
 					href='/'
-					className='mb-4 inline-block cursor-pointer bg-gradient-to-r from-emerald-300 to-sky-400 gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text hover:opacity-80 transition-opacity'>
+					className='cursor-pointer bg-gradient-to-r from-emerald-300 to-sky-400 gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text hover:opacity-80 transition-opacity'>
 					← Accueil
 				</Link>
+
+				<button
+					onClick={handleDownloadCV}
+					className='flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-900 font-semibold hover:opacity-50 transition-opacity animate-pulse [animate-duration: 10s] hover:animate-none'>
+					<span>📄</span>
+					Télécharger CV
+				</button>
 			</nav>
 
 			{/* En-tête du CV */}
