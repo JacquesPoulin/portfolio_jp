@@ -78,7 +78,8 @@ export const Curriculum = () => {
 								hover:animate-[pulseGlow_2s_infinite]
 								bg-gray-900
     '
-							priority
+							loading='eager'
+							priority={false}
 						/>
 
 						{/* Effet de rotation autour de la photo */}
@@ -232,9 +233,7 @@ export const Curriculum = () => {
 											Architecture et développement du nouveau site web de
 											l'entreprise (en cours)
 										</li>
-										<li>
-											Implémentation de fonctionnalités full-stack
-										</li>
+										<li>Implémentation de fonctionnalités full-stack</li>
 										<li>Intégration d'APIs RESTful sécurisées</li>
 									</ul>
 								</div>
@@ -252,6 +251,7 @@ export const Curriculum = () => {
 											'PostgreSQL',
 											'Redis',
 											'SASS',
+											'Tailwind',
 										].map((skill) => (
 											<span
 												key={skill}
@@ -273,7 +273,8 @@ export const Curriculum = () => {
 											pluridisciplinaire
 										</li>
 										<li>
-											Adaptabilité rapide aux nouvelles technologies et défis de l'entreprise
+											Adaptabilité rapide aux nouvelles technologies et défis de
+											l'entreprise
 										</li>
 										<li>Communication efficace avec les parties prenantes</li>
 									</ul>

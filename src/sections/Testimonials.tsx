@@ -40,6 +40,8 @@ export const TestimonialsSection = () => {
 														src={avatar}
 														alt={clientName}
 														className='max-h-full'
+														    loading="eager"
+    priority={false}
 													/>
 												</div>
 

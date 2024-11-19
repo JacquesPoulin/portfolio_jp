@@ -51,6 +51,8 @@ export const AboutSection = () => {
 									src={bookImage}
 									className='rounded-md'
 									alt="Image de la couverture d'un livre"
+									loading='eager'
+									priority={false}
 								/>
 							</div>
 						</Card>
@@ -112,7 +114,9 @@ export const AboutSection = () => {
 								alt='Carte du pays basque français'
 								className='w-full h-full object-cover object-left-top'
 								data-tooltip='PAYS BASQUE FRANÇAIS'
-								aria-label="Carte du pays basque français"
+								aria-label='Carte du pays basque français'
+								loading='eager'
+								priority={false}
 							/>
 
 							<div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full after:content-[""] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30'>
@@ -123,6 +127,8 @@ export const AboutSection = () => {
 									src={memojiImage}
 									alt="Mémoji d'un homme avec son ordinateur portable"
 									className='size-20'
+									loading='eager'
+									priority={false}
 								/>
 							</div>
 						</Card>

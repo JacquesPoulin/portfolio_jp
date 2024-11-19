@@ -7,10 +7,14 @@ export const Header = () => {
 	const [activeSection, setActiveSection] = useState('accueil');
 	const [isVisible, setIsVisible] = useState(true);
 	const [isAtTop, setIsAtTop] = useState(true);
+	const [isBrowser, setIsBrowser] = useState(false);
 	let timeoutId: NodeJS.Timeout;
-
 	// * * *  Gestion du srcoll de la page * * *
 	useEffect(() => {
+		setIsBrowser(true);
+
+		let timeoutId: NodeJS.Timeout;
+
 		const handleScroll = () => {
 			// Vérifie si on est en haut de la page
 			const isTop = window.scrollY < 100;
@@ -32,16 +36,20 @@ export const Header = () => {
 			}
 		};
 
-		window.addEventListener('scroll', handleScroll);
+		if (isBrowser) {
+			window.addEventListener('scroll', handleScroll);
+		}
 
 		// Cleanup
 		return () => {
-			window.removeEventListener('scroll', handleScroll);
-			if (timeoutId) {
-				clearTimeout(timeoutId);
+			if (isBrowser) {
+				window.removeEventListener('scroll', handleScroll);
+				if (timeoutId) {
+					clearTimeout(timeoutId);
+				}
 			}
 		};
-	}, []);
+	}, [isBrowser]);
 
 	// * * *  Montre la navbar quand la souris bouge * * *
 	const handleMouseMove = () => {
