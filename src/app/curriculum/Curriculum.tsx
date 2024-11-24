@@ -165,7 +165,7 @@ export const Curriculum = () => {
 						Profil
 					</h2>
 					<p className='text-white/70 text-justify leading-relaxed max-w-3xl'>
-						Développeur Full-Stack doté de 2 ans et demi d'expérience en
+						Développeur Full-Stack doté de 2 ans et demi d&apos;expérience en
 						entreprise dans la gestion de base de données, de logiciels et de
 						création web. Langages utilisés au quotidien : React/Node.js et
 						Python/Django avec comme missions le développement de solutions
@@ -198,7 +198,7 @@ export const Curriculum = () => {
 									</h4>
 									<ul className='space-y-2 text-white/70 list-disc pl-4'>
 										<li>
-											Développement et optimisation d'une application
+											Développement et optimisation d&apos;une application
 											d'entreprise avec Python/Django et React
 										</li>
 										<li>
@@ -234,7 +234,7 @@ export const Curriculum = () => {
 											l&apos;entreprise (en cours)
 										</li>
 										<li>Implémentation de fonctionnalités full-stack</li>
-										<li>Intégration d'APIs RESTful sécurisées</li>
+										<li>Intégration d&apso;APIs RESTful sécurisées</li>
 									</ul>
 								</div>
 
@@ -269,7 +269,7 @@ export const Curriculum = () => {
 									</h4>
 									<ul className='space-y-2 text-white/70 list-disc pl-4'>
 										<li>
-											Collaboration active au sein d'une équipe
+											Collaboration active au sein d&apos;une équipe
 											pluridisciplinaire
 										</li>
 										<li>
@@ -376,7 +376,7 @@ export const Curriculum = () => {
 								<h4 className='font-semibold group-hover:text-emerald-300 transition-colors'>
 									Star Tour Agency
 								</h4>
-								<p className='text-white/60'>Site d'agence de voyage spatial</p>
+								<p className='text-white/60'>Site d&apos;agence de voyage spatial</p>
 							</div>
 							<div className='absolute inset-0 bg-gradient-to-r from-emerald-300/0 to-sky-400/0 group-hover:from-emerald-300/5 group-hover:to-sky-400/5 transition-all duration-300'></div>
 						</a>
