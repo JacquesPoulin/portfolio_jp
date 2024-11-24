@@ -1,12 +1,12 @@
 export const footerLinks = [
 	{
 		id: 1,
-		title: ' Linkedin',
+		title: 'Linkedin',
 		path: 'https://linkedin.com/in/jacquespoulin',
 	},
 	{
 		id: 2,
-		title: ' Github',
+		title: 'Github',
 		path: 'https://github.com/JacquesPoulin',
 	},
 	{

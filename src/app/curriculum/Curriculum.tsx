@@ -202,7 +202,7 @@ export const Curriculum = () => {
 											d'entreprise avec Python/Django et React
 										</li>
 										<li>
-											Amélioration continue des performances et de l'expérience
+											Amélioration continue des performances et de l&apos;expérience
 											utilisateur
 										</li>
 									</ul>
@@ -216,7 +216,7 @@ export const Curriculum = () => {
 									<ul className='space-y-2 text-white/70 list-disc pl-4'>
 										<li>Administration et sécurisation de bases PostgreSQL</li>
 										<li>
-											Optimisation des requêtes via l'ORM Django pour des
+											Optimisation des requêtes via l&apos;ORM Django pour des
 											performances accrues
 										</li>
 										<li>Mise en place de stratégies de caching avec Redis</li>
@@ -231,7 +231,7 @@ export const Curriculum = () => {
 									<ul className='space-y-2 text-white/70 list-disc pl-4'>
 										<li>
 											Architecture et développement du nouveau site web de
-											l'entreprise (en cours)
+											l&apos;entreprise (en cours)
 										</li>
 										<li>Implémentation de fonctionnalités full-stack</li>
 										<li>Intégration d'APIs RESTful sécurisées</li>
@@ -274,7 +274,7 @@ export const Curriculum = () => {
 										</li>
 										<li>
 											Adaptabilité rapide aux nouvelles technologies et défis de
-											l'entreprise
+											l&apos;entreprise
 										</li>
 										<li>Communication efficace avec les parties prenantes</li>
 									</ul>
