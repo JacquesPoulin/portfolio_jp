@@ -202,8 +202,8 @@ export const Curriculum = () => {
 											d&apos;entreprise avec Python/Django et React
 										</li>
 										<li>
-											Amélioration continue des performances et de l&apos;expérience
-											utilisateur
+											Amélioration continue des performances et de
+											l&apos;expérience utilisateur
 										</li>
 									</ul>
 								</div>
@@ -376,7 +376,9 @@ export const Curriculum = () => {
 								<h4 className='font-semibold group-hover:text-emerald-300 transition-colors'>
 									Star Tour Agency
 								</h4>
-								<p className='text-white/60'>Site d&apos;agence de voyage spatial</p>
+								<p className='text-white/60'>
+									Site d&apos;agence de voyage spatial
+								</p>
 							</div>
 							<div className='absolute inset-0 bg-gradient-to-r from-emerald-300/0 to-sky-400/0 group-hover:from-emerald-300/5 group-hover:to-sky-400/5 transition-all duration-300'></div>
 						</a>
