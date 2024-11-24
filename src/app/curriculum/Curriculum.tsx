@@ -199,7 +199,7 @@ export const Curriculum = () => {
 									<ul className='space-y-2 text-white/70 list-disc pl-4'>
 										<li>
 											Développement et optimisation d&apos;une application
-											d'entreprise avec Python/Django et React
+											d&apos;entreprise avec Python/Django et React
 										</li>
 										<li>
 											Amélioration continue des performances et de l&apos;expérience
