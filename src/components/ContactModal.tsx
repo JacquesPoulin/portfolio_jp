@@ -44,7 +44,7 @@ export const ContactModal: FC<ContactModalProps> = ({ isOpen, onClose }) => {
 					<div className='space-y-2'>
 						{/* Appel */}
 						<a
-							href='tel:+33600000000'
+							href='tel:+33679177158'
 							className='flex items-center gap-2 p-4 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors'>
 							<span className='text-xl'>📞</span>
 							<div>
@@ -56,7 +56,7 @@ export const ContactModal: FC<ContactModalProps> = ({ isOpen, onClose }) => {
 
 						{/* SMS */}
 						<a
-							href='sms:+33600000000'
+							href='sms:+33679177158'
 							className='flex items-center gap-2 p-4 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors'>
 							<span className='text-xl'>💬</span>
 							<div>
