@@ -8,6 +8,68 @@ import movieFinderImage from '@/assets/images/movie.png';
 export const portfolioProjects = [
 	{
 		id: 1,
+		company: 'aerialpaysbasque',
+		year: '2023',
+		title: 'Site: cours de cerceau aérien',
+		results: [{ title: 'React' }, { title: 'Tailwind' }],
+		webSite: 'https://aerialpaysbasque.com/',
+		image: aerialImage,
+		projetPerso: false,
+		description: `
+			<p class="text-base text-white/80 mb-6">
+			Développement complet d'un site vitrine moderne pour Aerial Pays Basque, une école de cerceau aérien basée à Bayonne & Biarritz. Ce projet client a nécessité une approche centrée sur l'expérience utilisateur pour mettre en valeur une discipline artistique unique.
+			</p>
+
+			<div class="mb-6">
+			<h4 class="text-emerald-300 font-semibold mb-6">Points clés du développement :</h4>
+			<ul class="space-y-2 text-white/70">
+				<li class="flex items-start gap-2">
+				<span class="text-emerald-300/80">•</span>
+				Architecture React optimisée pour des performances maximales
+				</li>
+				<li class="flex items-start gap-2">
+				<span class="text-emerald-300/80">•</span>
+				Design responsive et animations fluides avec Tailwind CSS
+				</li>
+				<li class="flex items-start gap-2">
+				<span class="text-emerald-300/80">•</span>
+				Optimisation SEO pour une visibilité locale accrue
+				</li>
+				<li class="flex items-start gap-2">
+				<span class="text-emerald-300/80">•</span>
+				Intégration d'une galerie photos/vidéos performante
+				</li>
+				<li class="flex items-start gap-2">
+				<span class="text-emerald-300/80">•</span>
+				Système de navigation intuitif et ergonomique
+				</li>
+			</ul>
+			</div>
+
+			<div class="mb-6">
+			<h4 class="text-emerald-300 font-semibold mb-6">Défis techniques relevés :</h4>
+			<ul class="space-y-2 text-white/70">
+				<li class="flex items-start gap-2">
+				<span class="text-emerald-300/80">•</span>
+				Création d'animations personnalisées pour refléter la fluidité des mouvements aériens
+				</li>
+				<li class="flex items-start gap-2">
+				<span class="text-emerald-300/80">•</span>
+				Optimisation des images pour maintenir un temps de chargement rapide
+				</li>
+				<li class="flex items-start gap-2">
+				<span class="text-emerald-300/80">•</span>
+				Mise en place d'un système de routing efficace pour une navigation fluide
+				</li>
+			</ul>
+			</div>
+
+			<p class="text-base text-white/80">
+			Le site a permis d'augmenter significativement la visibilité de l'école et d'améliorer l'acquisition de nouveaux élèves grâce à une présentation professionnelle et une expérience utilisateur soignée.
+			</p>`,
+	},
+	{
+		id: 2,
 		company: 'family budget',
 		year: '2024',
 		title: 'APP: gestion de budget',
@@ -70,68 +132,6 @@ export const portfolioProjects = [
 
 			<p class="text-base text-white/80">
 			Cette application permet aux familles de mieux gérer leur budget grâce à des fonctionnalités intuitives et une visualisation claire de leurs finances, contribuant ainsi à une meilleure santé financière au quotidien.
-			</p>`,
-	},
-	{
-		id: 2,
-		company: 'aerialpaysbasque',
-		year: '2023',
-		title: 'Site: cours de cerceau aérien',
-		results: [{ title: 'React' }, { title: 'Tailwind' }],
-		webSite: 'https://aerialpaysbasque.com/',
-		image: aerialImage,
-		projetPerso: false,
-		description: `
-			<p class="text-base text-white/80 mb-6">
-			Développement complet d'un site vitrine moderne pour Aerial Pays Basque, une école de cerceau aérien basée à Bayonne & Biarritz. Ce projet client a nécessité une approche centrée sur l'expérience utilisateur pour mettre en valeur une discipline artistique unique.
-			</p>
-
-			<div class="mb-6">
-			<h4 class="text-emerald-300 font-semibold mb-6">Points clés du développement :</h4>
-			<ul class="space-y-2 text-white/70">
-				<li class="flex items-start gap-2">
-				<span class="text-emerald-300/80">•</span>
-				Architecture React optimisée pour des performances maximales
-				</li>
-				<li class="flex items-start gap-2">
-				<span class="text-emerald-300/80">•</span>
-				Design responsive et animations fluides avec Tailwind CSS
-				</li>
-				<li class="flex items-start gap-2">
-				<span class="text-emerald-300/80">•</span>
-				Optimisation SEO pour une visibilité locale accrue
-				</li>
-				<li class="flex items-start gap-2">
-				<span class="text-emerald-300/80">•</span>
-				Intégration d'une galerie photos/vidéos performante
-				</li>
-				<li class="flex items-start gap-2">
-				<span class="text-emerald-300/80">•</span>
-				Système de navigation intuitif et ergonomique
-				</li>
-			</ul>
-			</div>
-
-			<div class="mb-6">
-			<h4 class="text-emerald-300 font-semibold mb-6">Défis techniques relevés :</h4>
-			<ul class="space-y-2 text-white/70">
-				<li class="flex items-start gap-2">
-				<span class="text-emerald-300/80">•</span>
-				Création d'animations personnalisées pour refléter la fluidité des mouvements aériens
-				</li>
-				<li class="flex items-start gap-2">
-				<span class="text-emerald-300/80">•</span>
-				Optimisation des images pour maintenir un temps de chargement rapide
-				</li>
-				<li class="flex items-start gap-2">
-				<span class="text-emerald-300/80">•</span>
-				Mise en place d'un système de routing efficace pour une navigation fluide
-				</li>
-			</ul>
-			</div>
-
-			<p class="text-base text-white/80">
-			Le site a permis d'augmenter significativement la visibilité de l'école et d'améliorer l'acquisition de nouveaux élèves grâce à une présentation professionnelle et une expérience utilisateur soignée.
 			</p>`,
 	},
 	{
