@@ -89,7 +89,7 @@ export const Header = () => {
 						: 'opacity-100 translate-y-0'
 				}
       `}>
-			<nav className='flex gap-1 p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur'>
+			<nav className='flex gap-0.5 md:gap-1 p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur'>
 				{navlinks.map(({ id, path, title }) => {
 					const sectionId = path.replace('#', '');
 					const isActive = activeSection === sectionId;
