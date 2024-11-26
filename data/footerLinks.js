@@ -16,7 +16,7 @@ export const footerLinks = [
 	},
 	{
 		id: 4,
-		title: 'Blog',
+		title: 'Blog (en construction)',
 		path: '',
 	},
 ];
