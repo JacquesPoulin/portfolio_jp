@@ -116,13 +116,13 @@ export const ProjectsSection = () => {
 										{/* Entreprise & année de création du projet */}
 										<div>
 											<div className='bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text'>
-												<span>{company}</span>
+												<span className='text-xs md:text-base'>{company}</span>
 												<span>&bull;</span>
 												<span>{year}</span>
 											</div>
 										</div>
 										{/* Titre du projet */}
-										<h3 className='font-serif text-2xl mt-2 tracking-wider md:mt-5 md:text-4xl md:tracking-widest'>
+										<h3 className='font-serif text-xl mt-2 tracking-wider md:mt-5 md:text-4xl md:tracking-widest'>
 											{title}
 										</h3>
 										{/* Ligne de séparation */}
