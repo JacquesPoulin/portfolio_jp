@@ -9,7 +9,7 @@ export const portfolioProjects = [
 	{
 		id: 1,
 		company: 'aerialpaysbasque',
-		year: '2023',
+		year: '2024',
 		title: 'Site: cours de cerceau aérien',
 		results: [{ title: 'React' }, { title: 'Tailwind' }],
 		webSite: 'https://aerialpaysbasque.com/',
