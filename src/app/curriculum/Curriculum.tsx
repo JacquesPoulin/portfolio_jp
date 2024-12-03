@@ -183,7 +183,7 @@ export const Curriculum = () => {
 							<div className='flex flex-col md:flex-row md:justify-between md:items-center mb-4'>
 								<div>
 									<h3 className='font-semibold text-xl'>
-										Développeur Full Stack - SCANIA
+										Développeur Full Stack - CODEACTIVE
 									</h3>
 									<p className='text-white/60'>2022 - Présent</p>
 								</div>
