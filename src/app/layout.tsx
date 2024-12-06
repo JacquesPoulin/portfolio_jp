@@ -6,6 +6,7 @@ import { twMerge } from 'tailwind-merge';
 import GoogleAnalytics from '@/app/curriculum/components/GoogleAnalytics';
 // import AnalyticsProvider from '@/components/AnalyticsProvider';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const GA_MEASUREMENT_ID = 'G-28JSX95MW7';
 
@@ -124,6 +125,7 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
 				)}>
 				{children}
 				<Analytics />
+				<SpeedInsights />
 			</body>
 		</html>
 	);
