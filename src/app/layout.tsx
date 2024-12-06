@@ -4,7 +4,8 @@ import './globals.css';
 import { twMerge } from 'tailwind-merge';
 
 import GoogleAnalytics from '@/app/curriculum/components/GoogleAnalytics';
-import AnalyticsProvider from '@/components/AnalyticsProvider';
+// import AnalyticsProvider from '@/components/AnalyticsProvider';
+import { Analytics } from '@vercel/analytics/next';
 
 const GA_MEASUREMENT_ID = 'G-28JSX95MW7';
 
@@ -109,26 +110,6 @@ const defaultMetadata: Metadata = {
 
 export const metadata = defaultMetadata;
 
-// export async function generateMetadata({
-// 	params,
-// }: {
-// 	params: Partial<MetadataParams>;
-// }): Promise<Metadata> {
-// 	const customMetadata: Metadata = {
-// 		title: params.title ?? defaultMetadata.title,
-// 		description: params.description ?? defaultMetadata.description,
-// 		openGraph: {
-// 			...(defaultMetadata.openGraph as OpenGraphMetadata),
-// 			title:
-// 				(params.title as string) ??
-// 				(defaultMetadata.openGraph?.title as string),
-// 			description: params.description ?? defaultMetadata.openGraph?.description,
-// 		},
-// 	};
-
-// 	return customMetadata;
-// }
-
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
 	return (
 		<html lang='fr'>
@@ -141,7 +122,8 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
 					calistoga.variable,
 					'bg-gray-900 text-white antialiased font-sans'
 				)}>
-				<AnalyticsProvider>{children}</AnalyticsProvider>
+				{children}
+				<Analytics />
 			</body>
 		</html>
 	);
