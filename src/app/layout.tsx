@@ -3,45 +3,23 @@ import { Inter, Calistoga } from 'next/font/google';
 import './globals.css';
 import { twMerge } from 'tailwind-merge';
 
-// <head>
-// 	<link
-// 		rel='icon'
-// 		type='image/png'
-// 		href='/layout/favicon/favicon-96x96.png'
-// 		sizes='96x96'
-// 	/>
-// 	<link rel='icon' type='image/svg+xml' href='/layout/favicon/favicon.svg' />
-// 	<link rel='shortcut icon' href='/layout/favicon/favicon.ico' />
-// 	<link
-// 		rel='apple-touch-icon'
-// 		sizes='180x180'
-// 		href='/layout/favicon/layout/apple-touch-icon.png'
-// 	/>
-// 	<meta name='apple-mobile-web-app-title' content='AerialPB' />
-// 	<link rel='manifest' href='/layout/favicon/site.webmanifest' />
-// </head>;
+import GoogleAnalytics from '@/app/curriculum/components/GoogleAnalytics';
+// import AnalyticsProvider from '@/components/AnalyticsProvider';
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
+const GA_MEASUREMENT_ID = 'G-28JSX95MW7';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
-
 const calistoga = Calistoga({
 	subsets: ['latin'],
 	variable: '--font-serif',
 	weight: ['400'],
 });
 
-// interface MetadataParams {
-// 	title: string;
-// 	description: string;
-// 	tags: string[];
-// 	slug: string;
-// }
-
 type RootLayoutProps = {
 	children: React.ReactNode;
 };
-
-// Définition du type pour OpenGraph
-// type OpenGraphMetadata = NonNullable<Metadata['openGraph']>;
 
 // Métadonnées par défaut
 const defaultMetadata: Metadata = {
@@ -133,29 +111,12 @@ const defaultMetadata: Metadata = {
 
 export const metadata = defaultMetadata;
 
-// export async function generateMetadata({
-// 	params,
-// }: {
-// 	params: Partial<MetadataParams>;
-// }): Promise<Metadata> {
-// 	const customMetadata: Metadata = {
-// 		title: params.title ?? defaultMetadata.title,
-// 		description: params.description ?? defaultMetadata.description,
-// 		openGraph: {
-// 			...(defaultMetadata.openGraph as OpenGraphMetadata),
-// 			title:
-// 				(params.title as string) ??
-// 				(defaultMetadata.openGraph?.title as string),
-// 			description: params.description ?? defaultMetadata.openGraph?.description,
-// 		},
-// 	};
-
-// 	return customMetadata;
-// }
-
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
 	return (
 		<html lang='fr'>
+			<head>
+				<GoogleAnalytics GA_MEASUREMENT_ID={GA_MEASUREMENT_ID} />
+			</head>
 			<body
 				className={twMerge(
 					inter.variable,
@@ -163,6 +124,8 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
 					'bg-gray-900 text-white antialiased font-sans'
 				)}>
 				{children}
+				<Analytics />
+				<SpeedInsights />
 			</body>
 		</html>
 	);
