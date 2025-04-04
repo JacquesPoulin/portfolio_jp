@@ -234,7 +234,7 @@ export const Curriculum = () => {
 											l&apos;entreprise (en cours)
 										</li>
 										<li>Implémentation de fonctionnalités full-stack</li>
-										<li>Intégration d&apso;APIs RESTful sécurisées</li>
+										<li>Intégration d&apos;APIs RESTful sécurisées</li>
 									</ul>
 								</div>
 
@@ -321,9 +321,21 @@ export const Curriculum = () => {
 					<h3 className='text-xl mb-4 text-white/80'>Projets Professionnels</h3>
 					<div className='grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 transition-all duration-300'>
 						<a
+							href='https://codeactive.fr'
+							target='_blank'
+							rel='noreferrer'
+							title='Voir le site'
+							className='p-4 rounded-xl bg-white/5 hover:bg-white/10 hover:text-emerald-300 transition-colors'>
+							<h4 className='font-semibold'>Codeactive</h4>
+							<p className='text-white/60'>
+								Site institutionnel de gestion de crédits
+							</p>
+						</a>
+						<a
 							href='https://aerialpaysbasque.com'
 							target='_blank'
 							rel='noreferrer'
+							title='Voir le site'
 							className='p-4 rounded-xl bg-white/5 hover:bg-white/10 hover:text-emerald-300 transition-colors'>
 							<h4 className='font-semibold'>Aerial Pays Basque</h4>
 							<p className='text-white/60'>
@@ -334,17 +346,10 @@ export const Curriculum = () => {
 							href='https://poledanceanglet.fr'
 							target='_blank'
 							rel='noreferrer'
+							title='Voir le site'
 							className='p-4 rounded-xl bg-white/5 hover:bg-white/10 hover:text-emerald-300 transition-colors'>
 							<h4 className='font-semibold'>Pole Dance Anglet</h4>
 							<p className='text-white/60'>Site vitrine école de pole dance</p>
-						</a>
-						<a
-							href='https://familiybudget.com'
-							target='_blank'
-							rel='noreferrer'
-							className='p-4 rounded-xl bg-white/5 hover:bg-white/10 hover:text-emerald-300 transition-colors'>
-							<h4 className='font-semibold'>Family Budget</h4>
-							<p className='text-white/60'>Application de gestion de budget</p>
 						</a>
 					</div>
 
@@ -355,6 +360,7 @@ export const Curriculum = () => {
 							href='https://promptopia-zeta-sage.vercel.app/'
 							target='_blank'
 							rel='noreferrer'
+							title='Voir le site'
 							className='p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden'>
 							<div className='relative z-10'>
 								<h4 className='font-semibold group-hover:text-emerald-300 transition-colors'>
@@ -371,6 +377,7 @@ export const Curriculum = () => {
 							href='https://star-tour-agency.vercel.app/'
 							target='_blank'
 							rel='noreferrer'
+							title='Voir le site'
 							className='p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden'>
 							<div className='relative z-10'>
 								<h4 className='font-semibold group-hover:text-emerald-300 transition-colors'>
@@ -387,6 +394,7 @@ export const Curriculum = () => {
 							href='https://landarea.vercel.app/'
 							target='_blank'
 							rel='noreferrer'
+							title='Voir le site'
 							className='p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden'>
 							<div className='relative z-10'>
 								<h4 className='font-semibold group-hover:text-emerald-300 transition-colors'>
@@ -403,6 +411,7 @@ export const Curriculum = () => {
 							href='https://findthemovie.vercel.app/'
 							target='_blank'
 							rel='noreferrer'
+							title='Voir le site'
 							className='p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden'>
 							<div className='relative z-10'>
 								<h4 className='font-semibold group-hover:text-emerald-300 transition-colors'>

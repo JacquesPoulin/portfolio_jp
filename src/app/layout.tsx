@@ -114,15 +114,13 @@ export const metadata = defaultMetadata;
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
 	return (
 		<html lang='fr'>
-			<head>
-				<GoogleAnalytics GA_MEASUREMENT_ID={GA_MEASUREMENT_ID} />
-			</head>
 			<body
 				className={twMerge(
 					inter.variable,
 					calistoga.variable,
 					'bg-gray-900 text-white antialiased font-sans'
 				)}>
+				<GoogleAnalytics GA_MEASUREMENT_ID={GA_MEASUREMENT_ID} />
 				{children}
 				<Analytics />
 				<SpeedInsights />
