@@ -1,6 +1,6 @@
 // import familyBudgetImage from '@/assets/images/familyBudget.png';
 import aerialImage from '@/assets/images/aerial.png';
-import codeactiveImage from '@/assets/images/codeactive.png';
+import codeactiveImage from '@/assets/images/codeactive.PNG';
 import promptopiaImage from '@/assets/images/promptopia.png';
 import starTourImage from '@/assets/images/starTour_1.png';
 import landareaImage from '@/assets/images/landarea.png';
